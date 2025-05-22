@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 module.exports = {
   root: true,
   env: {
@@ -20,6 +23,7 @@ module.exports = {
   ignorePatterns: [
     "/lib/**/*", // Ignore built files.
     "/generated/**/*", // Ignore generated files.
+    "/src/*",
   ],
   plugins: [
     "@typescript-eslint",
@@ -29,5 +33,6 @@ module.exports = {
     "quotes": ["error", "double"],
     "import/no-unresolved": 0,
     "indent": ["error", 2],
+    "no-unused-vars": "off",
   },
 };
